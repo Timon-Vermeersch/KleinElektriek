@@ -1,2 +1,21 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Header from '$lib/Components/UI/Header.svelte';
+    
+
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+  
+    :global(body) {
+        margin: 0;
+        background-color: #d9d9d9;
+        font-family: 'Montserrat', sans-serif;
+        background-image: url('https://wallpapercave.com/wp/wp5119602.jpg');
+        background-size: cover;
+  }
+</style>
+
+
+
+<Header/>
