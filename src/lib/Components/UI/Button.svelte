@@ -9,8 +9,8 @@
   button,
   a {
     font: inherit;
-    border: 1px solid #cf0056;
-    background: #cf0056;
+    border: 1px solid #c1b7bb;
+    background: #b1f0f0b5;
     padding: 0.5rem 1rem;
     color: white;
     border-radius: 5px;

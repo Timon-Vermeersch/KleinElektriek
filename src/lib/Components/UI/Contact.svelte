@@ -6,7 +6,7 @@
  a{
     color: white;
     padding: 10px 20px; /* Adjust values as needed */
-  font-size: 16px; /* Example text size */
+    font-size: 16px; /* Example text size */
   
  }
   </style>
