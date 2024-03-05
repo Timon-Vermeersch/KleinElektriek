@@ -3,7 +3,7 @@
     import HeaderBanner from '$lib/Components/UI/HeaderBanner.svelte';
     import DisplayLower from "$lib/Components/UI/displayLower.svelte"
     
-    
+let view = ''
 
 </script>
 
@@ -14,8 +14,9 @@
         margin: 0;
         background-color: #d9d9d9;
         font-family: 'Montserrat', sans-serif;
-        /* background-image: url('https://wallpapercave.com/wp/wp5119602.jpg'); */
         background-size: cover;
+        overflow-y: none;
+        max-width: 100%;
   }
 
 </style>
@@ -23,7 +24,10 @@
 
 
 <!-- <Header/> -->
+
+
 <HeaderBanner/>
+
 
 <DisplayLower/>
 

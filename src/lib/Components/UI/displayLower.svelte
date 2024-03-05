@@ -1,5 +1,13 @@
 
+<script>
+import image1 from "$lib/assets/1.jpg"
+import image2 from "$lib/assets/2.jpg"
+import image3 from "$lib/assets/3.jpg"
+import image4 from "$lib/assets/4.jpg"
+import image5 from "$lib/assets/5.jpg"
+import image6 from "$lib/assets/6.jpg"
 
+</script>
 
 <style>
     #mainContainer{
@@ -8,16 +16,19 @@
         position: relative;
         display: flex;
         justify-content: space
-        width 100%
+        width 100vw;
+        overflow-y: auto;
     }
 
     img{
         width: 20rem;
         height: 20rem;
         background-size: stretch;
+        object-fit: cover;
+
     }
     div{
-        padding: 1rem;
+        /* padding: 1rem; */
         background-color: rgba(131, 146, 150, 0.6);
         justify-content: space-around
     }
@@ -34,27 +45,65 @@ p{
 </style>
 
 <div id='mainContainer'>
-
-    <div>
+<!-- foto1 -->
+    <div class='foto'>
          <p class='thick'>TEXT</p>
          <p>subtext</p>
-        <article><img src="https://images.unsplash.com/photo-1542395975-1913c2900823?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D" alt=""></article>
+        <article><img src={image1} alt=""></article>
     </div>
+
+<!-- foto2 -->
         <div>
-            <article><img src="https://images.unsplash.com/photo-1542378151504-0361b8ec8f93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D" alt=""></article>
+            <article><img src={image2} alt=""></article>
             <p class='thick'>TEXT</p>
             <p>subtext</p>
         </div>
-   <div>
+
+<!-- foto3 -->
+   <div class='foto'>
     <p class='thick'>TEXT</p>
          <p>subtext</p>
-    <article><img src="https://images.unsplash.com/photo-1542395975-1913c2900823?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D" alt=""></article>
+    <article><img src={image3} alt=""></article>
    </div>
-        <div>
+
+<!-- foto4 -->
+        <div class='foto'>
             
-            <article><img src="https://images.unsplash.com/photo-1542378151504-0361b8ec8f93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8fA%3D%3D" alt=""></article>
+            <article><img src={image4} alt=""></article>
             <p class='thick'>TEXT</p>
                 <p>subtext</p>
         </div>
+<!-- extra -->
+
+
+
+
+        <div>
+            
+            <article><img src={image4} alt=""></article>
+            <p class='thick'>TEXT</p>
+                <p>subtext</p>
+        </div>
+        <div>
+            
+            <article><img src={image4} alt=""></article>
+            <p class='thick'>TEXT</p>
+                <p>subtext</p>
+        </div>
+        <div>
+            
+            <article><img src={image4} alt=""></article>
+            <p class='thick'>TEXT</p>
+                <p>subtext</p>
+        </div>
+        <div>
+            
+            <article><img src={image4} alt=""></article>
+            <p class='thick'>TEXT</p>
+                <p>subtext</p>
+        </div>
+
+
+
 
 </div>
