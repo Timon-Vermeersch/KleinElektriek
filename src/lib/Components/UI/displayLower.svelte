@@ -30,7 +30,8 @@ import image6 from "$lib/assets/6.jpg"
     div{
         /* padding: 1rem; */
         background-color: rgba(131, 146, 150, 0.6);
-        justify-content: space-around
+        justify-content: space-between;
+        padding: 5px;
     }
     p.thick {
   font-weight: bold;
@@ -76,29 +77,27 @@ p{
 <!-- extra -->
 
 
-
-
+        <div>
+            <p class='thick'>TEXT</p>
+                <p>subtext</p>
+            <article><img src={image6} alt=""></article>
+            
+        </div>
         <div>
             
-            <article><img src={image4} alt=""></article>
+            <article><img src={image5} alt=""></article>
             <p class='thick'>TEXT</p>
                 <p>subtext</p>
         </div>
         <div>
-            
-            <article><img src={image4} alt=""></article>
             <p class='thick'>TEXT</p>
                 <p>subtext</p>
+            <article><img src={image4} alt=""></article>
+            
         </div>
         <div>
             
-            <article><img src={image4} alt=""></article>
-            <p class='thick'>TEXT</p>
-                <p>subtext</p>
-        </div>
-        <div>
-            
-            <article><img src={image4} alt=""></article>
+            <article><img src={image6} alt=""></article>
             <p class='thick'>TEXT</p>
                 <p>subtext</p>
         </div>

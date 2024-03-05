@@ -3,8 +3,11 @@
 import headerPicture from '$lib/assets/foto2.png';
 import Header from './Header.svelte';
 import Button from '$lib/Components/UI/Button.svelte';
+import MapsCard from './MapsCard.svelte';
+import NuBellen from './NuBellen.svelte';
+import AboutCard from './AboutCard.svelte';
 
-
+let state = 'about'
 
 $: headerStyle = `background-image: url(${headerPicture}); 
                 height: 35rem;
@@ -14,6 +17,15 @@ $: headerStyle = `background-image: url(${headerPicture});
                 width: 100vw;
          `
 
+function setAbout (){
+       state = 'about'
+}
+function setRoute (){
+       state = 'route'
+}
+function setBellen (){
+       state = 'bellen'
+}
 </script>
 
 
@@ -23,23 +35,42 @@ $: headerStyle = `background-image: url(${headerPicture});
 #bannerInfo{
        margin: 5rem;
        padding: 1rem;
-       opacity: 99%;
+       opacity: 100%;
        background-color: rgba(255, 255, 255, 0);
        margin-top: 10rem;
        display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       width: 20rem;
-       background-color: blue;
+       height: 350px;
+       width: 10rem;
+       
+       justify-content: space-around;
        flex-direction: column;
        
        
 }
 
+#headerBanner{
+       display: flex;
+       justify-content: space-evenly;
+}
+
+#card{
+      
+       
+       display: flex;
+       margin-top: 8rem;
+       background-color: rgba(250, 235, 215, 0);
+       height:  500px;
+       width: 500px;
+       justify-content: center;
+       
+
+
+}
 
 h1{
        margin-top: 5rem;
-       color: aqua;}
+       color: aqua;
+       }
 </style>
 
 
@@ -50,10 +81,24 @@ h1{
        <div id = 'button-container'>
               
               <div id='bannerInfo'>
-              <Button>Contact</Button>
-              <Button>Nu bellen</Button>   
-              <Button>Route</Button>      
+              <Button on:click = {setAbout}>Welkom</Button>
+              <Button on:click = {setBellen}>Nu bellen</Button>   
+              <Button on:click = {setRoute}>Route</Button>
+              <Button>Contact</Button>  
+              <Button>Services</Button>    
+              <Button>Offerte Aanvragen</Button>        
               </div>
+       </div>
+
+       <div id = 'card'>
+              
+              {#if state == "about"}
+              <AboutCard/>
+              {:else if state == "route"}
+              <MapsCard/>
+              {:else if state == "bellen"}
+              <NuBellen/>
+              {/if}
        </div>
 </div>
 
