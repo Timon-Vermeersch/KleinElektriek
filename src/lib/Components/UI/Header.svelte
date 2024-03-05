@@ -5,23 +5,24 @@
 
 </script>
 <style>
-  header {
+  div {
     display: flex;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    height: 3rem;
-    background-color: #305b4c;
+    height: 5rem;
+    background-color: #30545b00;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+    opacity: 100;
+    
   }
   .title-container {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     position: relative;
   }
 
@@ -35,6 +36,9 @@
   display: flex;
   align-items: center;
   margin-right: 1rem;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.201);
+  
 }
 .header-icon {
   height: 2rem; 
@@ -45,7 +49,7 @@
 }
 </style>
 
-<header>
+<div>
 <img src="/outlet-svgrepo-com.svg" alt="Outlet Icon" class="header-icon" >
   
   <div class="title-container"><h1>Kleine Elektriciteitswerken Serge</h1></div>
@@ -56,4 +60,5 @@
     </div>
 
 
-</header>
+  </div>
+
