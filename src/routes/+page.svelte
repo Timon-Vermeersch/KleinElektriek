@@ -2,8 +2,10 @@
     import Header from '$lib/Components/UI/Header.svelte';
     import HeaderBanner from '$lib/Components/UI/HeaderBanner.svelte';
     import DisplayLower from "$lib/Components/UI/displayLower.svelte"
+    import AboutCard from '$lib/Components/UI/AboutCard.svelte';
+    import NuBellen from '$lib/Components/UI/NuBellen.svelte';
     
-let view = ''
+
 
 </script>
 
