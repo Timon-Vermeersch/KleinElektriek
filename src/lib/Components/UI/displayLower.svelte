@@ -48,22 +48,20 @@ p{
 <div id='mainContainer'>
 <!-- foto1 -->
     <div class='foto'>
-         <p class='thick'>TEXT</p>
-         <p>subtext</p>
+         <!-- <p class='thick'>TEXT</p>
+         <p>subtext</p> -->
         <article><img src={image1} alt=""></article>
     </div>
 
 <!-- foto2 -->
         <div>
             <article><img src={image2} alt=""></article>
-            <p class='thick'>TEXT</p>
-            <p>subtext</p>
+            
         </div>
 
 <!-- foto3 -->
    <div class='foto'>
-    <p class='thick'>TEXT</p>
-         <p>subtext</p>
+    
     <article><img src={image3} alt=""></article>
    </div>
 
@@ -71,35 +69,30 @@ p{
         <div class='foto'>
             
             <article><img src={image4} alt=""></article>
-            <p class='thick'>TEXT</p>
-                <p>subtext</p>
+            
         </div>
 <!-- extra -->
 
 
         <div>
-            <p class='thick'>TEXT</p>
-                <p>subtext</p>
+            
             <article><img src={image6} alt=""></article>
             
         </div>
         <div>
             
             <article><img src={image5} alt=""></article>
-            <p class='thick'>TEXT</p>
-                <p>subtext</p>
+            
         </div>
         <div>
-            <p class='thick'>TEXT</p>
-                <p>subtext</p>
+            
             <article><img src={image4} alt=""></article>
             
         </div>
         <div>
             
             <article><img src={image6} alt=""></article>
-            <p class='thick'>TEXT</p>
-                <p>subtext</p>
+            
         </div>
 
 

@@ -6,8 +6,17 @@ import Button from '$lib/Components/UI/Button.svelte';
 import MapsCard from './MapsCard.svelte';
 import NuBellen from './NuBellen.svelte';
 import AboutCard from './AboutCard.svelte';
-
+let mobile = ''
 let state = 'about'
+let scroll = ''
+$: innerWidth = 0
+
+$: mobile = innerWidth < 1100 ? '' : '';
+$: scroll = innerWidth < 1100 ? 'scroll': 'none'
+
+
+
+
 
 $: headerStyle = `background-image: url(${headerPicture}); 
                 height: 35rem;
@@ -15,6 +24,10 @@ $: headerStyle = `background-image: url(${headerPicture});
                 padding-top: 2px;
                 height: 100vh;
                 width: 100vw;
+                flex-direction: ${mobile};
+                overflow-y: scroll;
+                
+                
          `
 
 function setAbout (){
@@ -27,7 +40,7 @@ function setBellen (){
        state = 'bellen'
 }
 </script>
-
+<svelte:window bind:innerWidth  />
 
 
 
