@@ -2,17 +2,22 @@
     import Contact from './Contact.svelte';
     import CallNow from './CallNow.svelte';
     
+    $: innerWidth = 0
+    
 
 </script>
+
+<svelte:window bind:innerWidth  />
 <style>
   div {
+    
     display: flex;
     position: fixed;
     width: 100vw;
     top: 0;
     left: 0;
-    height: 5rem;
-    background-color: #30545b4d;
+    height: 3.5rem;
+    background-color: #4f727a41;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,13 +37,16 @@
     margin: 0;
     justify-content: center;
     text-shadow: 2px 2px 0px #000000;
+    font-size: clamp(0px , 4vw,40px);
   }
+
+
   .right-section {
   display: flex;
   align-items: center;
   margin-right: 1rem;
   justify-content: flex-end;
-  background-color: rgba(255, 255, 255, 0.349);
+  
   
 }
 .header-icon {
@@ -51,15 +59,17 @@
 </style>
 
 <div>
+  
   <img src="/outlet-svgrepo-com.svg" alt="Outlet Icon" class="header-icon" >
     
     <div class="title-container"><h1>Kleine Elektriciteitswerken Serge</h1></div>
-    
+    {#if innerWidth >= 1100}
       <div class = "right-section">
         <Contact/>
         <CallNow/>
+    
       </div>
-  
+    {/if}
   
     </div>
   
