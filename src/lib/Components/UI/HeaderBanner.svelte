@@ -19,13 +19,17 @@ $: scroll = innerWidth < 1100 ? 'scroll': 'none'
 
 
 $: headerStyle = `background-image: url(${headerPicture}); 
-                height: 35rem;
+                height: 30rem;
                 background-size: cover;
                 padding-top: 2px;
                 height: 100vh;
                 width: 100vw;
                 flex-direction: ${mobile};
                 overflow-y: scroll;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                
                 
                 
          `
@@ -46,35 +50,37 @@ function setBellen (){
 
 <style>
 #bannerInfo{
-       margin: 5rem;
+       margin: 5rem 1rem 5rem 5rem; /* Top Right Bottom Left */
        padding: 1rem;
        opacity: 100%;
        background-color: rgba(255, 255, 255, 0);
        margin-top: 10rem;
        display: flex;
-       height: 350px;
+       height: 12px;
        width: 10rem;
-       
-       justify-content: space-around;
        flex-direction: column;
+       justify-content: space-evenly;
+       gap: 1rem;
        
        
 }
 
 #headerBanner{
        display: flex;
-       justify-content: space-evenly;
+       
+       
 }
 
 #card{
       
        
        display: flex;
-       margin-top: 8rem;
-       background-color: rgba(250, 235, 215, 0);
-       height:  500px;
-       width: 500px;
+       margin-top: 1rem;
+       background-color: rgba(250, 235, 215, 0.866);
+       height:  30rem;
        justify-content: center;
+       margin-left: 1rem;
+       border-radius: 25px;
        
 
 
@@ -98,8 +104,8 @@ h1{
               <Button on:click = {setBellen}>Nu bellen</Button>   
               <Button on:click = {setRoute}>Route</Button>
               <Button>Contact</Button>  
-              <Button>Services</Button>    
-              <Button>Offerte Aanvragen</Button>        
+                 
+                     
               </div>
        </div>
 
