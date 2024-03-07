@@ -1,6 +1,6 @@
 
 <script>
-import headerPicture from '$lib/assets/foto2.png';
+import headerPicture from '$lib/assets/foto222.png';
 import Header from './Header.svelte';
 import Button from '$lib/Components/UI/Button.svelte';
 import MapsCard from './MapsCard.svelte';
@@ -29,6 +29,9 @@ $: headerStyle = `background-image: url(${headerPicture});
                 display:flex;
                 justify-content: center;
                 align-items: center;
+                flex-wrap: wrap;
+                
+                
                 
                 
                 
@@ -76,11 +79,14 @@ function setBellen (){
        
        display: flex;
        margin-top: 1rem;
-       background-color: rgba(250, 235, 215, 0.866);
+       background-color:#949E9E;
        height:  30rem;
        justify-content: center;
        margin-left: 1rem;
        border-radius: 25px;
+       border-style: solid ;
+       border-width: 1.5px;
+       border-color: white;
        
 
 
