@@ -18,8 +18,9 @@
   margin-top: 2rem;
   max-width: 20rem;
   max-height: 15rem;
-  
-  object-fit: contain;
+  border-style: groove;
+  object-fit: solid;
+  border-color: white;
   
 }
 
@@ -28,14 +29,21 @@ img{
   width: 100%;
   height: 100%;
   
+  
+  
 }
 
 p{
+  padding: 10px;
   font-style: oblique;
   font-size: large;
   font-weight: bold;
   margin: 1rem;
   margin-top: 2rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(190, 209, 209, 0.5);
+  border-style: groove;
+  
 }
 </style>
 
