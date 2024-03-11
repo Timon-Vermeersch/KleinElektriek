@@ -28,11 +28,12 @@
   }
 
 .card{
-  padding: 0rem;
-  max-width: auto;
-  max-height: auto;
+  padding: 1rem;
+  max-width: 95%;
+  max-height: 95%;
   object-fit: cover;
   overflow: auto;
+  
   
 }
 
@@ -41,6 +42,7 @@ img{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  border-radius: 12px;
 }
 .text{
   background-color:#2192905b;
