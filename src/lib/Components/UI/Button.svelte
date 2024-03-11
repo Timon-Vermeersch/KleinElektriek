@@ -3,6 +3,15 @@
   export let href = null;
   export let mode = null;
   export let color = null;
+
+
+  const colorPalette = {
+  darkestTeal: '#006d6d',
+  mediumTeal: '#1d9a9a',
+  lightTeal: '#3ac1c1',
+  lightestTeal: '#54d8d8',
+  brightestTeal: '#88efef'
+};
   
 </script>
 
@@ -10,7 +19,7 @@
   button,
   a {
     font: inherit;
-    border: 1px solid #c1b7bb;
+    border: 1px solid #88efef;
     background: rgba(7, 149, 149, 0.799);
     padding: 0.5rem 1rem;
     color: white;
@@ -29,8 +38,8 @@
   button:active,
   a:hover,
   a:active {
-    background: #e40763;
-    border-color: #e40763;
+    background:#3ac1c1ef;
+    border-color: #3ac1c1e4;
     box-shadow: 1px 1px 8px rgba(77, 51, 51, 0.26);
     
   }
@@ -58,7 +67,7 @@
 
   .outline {
     background: transparent;
-    color: #cf0056;
+    color: #3ac1c1;
     box-shadow: none;
   }
 
@@ -84,6 +93,7 @@
   .outline.success:active {
     background: #c2ffd1;
   }
+  
 </style>
 
 {#if href}

@@ -1,5 +1,6 @@
 
 <script>
+
 import headerPicture from '$lib/assets/foto222.png';
 import Header from './Header.svelte';
 import Button from '$lib/Components/UI/Button.svelte';
@@ -9,12 +10,19 @@ import AboutCard from './AboutCard.svelte';
 let mobile = ''
 let state = 'about'
 let scroll = ''
-$: innerWidth = 0
-
+let scrolledY =0;
+$: innerWidth = 0;
+$: innerHeight = 0;
 $: mobile = innerWidth < 1100 ? '' : '';
 $: scroll = innerWidth < 1100 ? 'scroll': 'none'
 
-
+const colorPalette = {
+  darkestTeal: '#006d6d',
+  mediumTeal: '#1d9a9a',
+  lightTeal: '#3ac1c1',
+  lightestTeal: '#54d8d8',
+  brightestTeal: '#88efef'
+};
 
 
 
@@ -47,17 +55,20 @@ function setBellen (){
        state = 'bellen'
 }
 </script>
-<svelte:window bind:innerWidth  />
+<svelte:window bind:innerWidth bind:innerHeight bind:scrollY={scrolledY} />
 
 
 
 <style>
 #bannerInfo{
+
+       
        margin: 5rem 1rem 5rem 5rem; /* Top Right Bottom Left */
        padding: 1rem;
        opacity: 100%;
        background-color: rgba(255, 255, 255, 0);
        margin-top: 10rem;
+       padding-right: 2rem;
        display: flex;
        height: 12px;
        width: 10rem;
@@ -69,24 +80,33 @@ function setBellen (){
 }
 
 #headerBanner{
+       
        display: flex;
+       
        
        
 }
 
 #card{
-      
+              /* From https://css.glass */
+              background: rgba(84, 216, 216, 0.24);
+              border-radius: 16px;
+              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+              backdrop-filter: blur(4.9px);
+              -webkit-backdrop-filter: blur(4.9px);
+              border: 1px solid rgba(84, 216, 216, 0.9);
        
        display: flex;
        margin-top: 1rem;
-       background-color:#949E9E;
-       height:  30rem;
+       height:  31rem;
        justify-content: center;
        margin-left: 1rem;
        border-radius: 25px;
        border-style: solid ;
        border-width: 1.5px;
-       border-color: white;
+       overflow: hidden;
+       max-width: 40rem;
+       
        
 
 
@@ -99,7 +119,9 @@ h1{
 </style>
 
 
+{#if (scrolledY < innerHeight * 0.1)}
 <Header/>
+{/if}
 
 
 <div id='headerBanner' style={headerStyle}>
