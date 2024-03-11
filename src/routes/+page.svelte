@@ -8,6 +8,12 @@
 
 
 </script>
+<svelte:head>
+	<title>Kleine Elektriciteitswerken Serge </title>
+    <meta name="description" content="Elektrotechnische Diensten van Serge - uw lokale expert voor kleine elektriciteitsklussen. Snelle installatie en reparatie van stopcontacten, lichtarmaturen en meer. Neem contact op voor elektriciteitsvoorziening in uw poolhouse of voor het ophangen van een nieuw kader. Snel en betrouwbaar in uw regio.">
+
+
+</svelte:head>
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
@@ -32,4 +38,6 @@
 
 
 <DisplayLower/>
+
+
 

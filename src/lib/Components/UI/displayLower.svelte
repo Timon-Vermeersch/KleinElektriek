@@ -8,7 +8,13 @@ import image3 from "$lib/assets/3.jpg"
 import image4 from "$lib/assets/4.jpg"
 import image5 from "$lib/assets/5.jpg"
 import image6 from "$lib/assets/6.jpg"
-
+const colorPalette = {
+  darkestTeal: '#006d6d',
+  mediumTeal: '#1d9a9a',
+  lightTeal: '#3ac1c1',
+  lightestTeal: '#54d8d8',
+  brightestTeal: '#88efef'
+};
 // https://svelte.dev/repl/97366319dc7c477989fe744d01d81391?version=3.39.0
 
 
@@ -28,7 +34,7 @@ import image6 from "$lib/assets/6.jpg"
 
 <style>
     #mainContainer{
-        background-color: #333333;
+        background-color: #205357;
         height: auto;
         position: relative;
         display: flex;
@@ -45,9 +51,9 @@ import image6 from "$lib/assets/6.jpg"
     }
     div{
         /* padding: 1rem; */
-        background-color: #333333;
+        background-color: #205357;
         justify-content: space-between;
-        padding: 6px;
+        padding: 0.2rem;
     }
     p.thick {
   font-weight: bold;
