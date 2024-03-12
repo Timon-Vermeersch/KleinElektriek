@@ -54,10 +54,6 @@ function setRoute (){
 function setBellen (){
        state = 'bellen'
 }
-function scrollToBottom() {
-    const maxHeight = document.body.scrollHeight;
-    window.scrollTo({top: maxHeight, behavior: 'smooth'});
-  }
 </script>
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY={scrolledY} />
 
@@ -72,7 +68,7 @@ function scrollToBottom() {
        opacity: 100%;
        background-color: rgba(255, 255, 255, 0);
        margin-top: 10rem;
-       padding-right: 4rem;
+       padding-right: 2rem;
        display: flex;
        height: 12px;
        width: 10rem;
@@ -102,16 +98,15 @@ function scrollToBottom() {
        
        display: flex;
        margin: 1rem;
-       margin-top: 2rem;
-       max-height:  28rem;
+       margin-top: 1rem;
+       height:  31rem;
        justify-content: center;
        margin-left: 1rem;
        border-radius: 25px;
        border-style: solid ;
        border-width: 1.5px;
        overflow: hidden;
-       max-width: 35rem;
-       
+       max-width: 40rem;
        
        
 
@@ -135,10 +130,9 @@ h1{
               
               <div id='bannerInfo'>
               <Button on:click = {setAbout}>Welkom</Button>
-              <Button on:click = {setBellen}>Info</Button>   
+              <Button on:click = {setBellen}>Nu bellen</Button>   
               <Button on:click = {setRoute}>Route</Button>
-              <Button on:click = {scrollToBottom}>Gallerij</Button>
-              <Button>Deejay Serge</Button>  
+              <Button>Contact</Button>  
                  
                      
               </div>
