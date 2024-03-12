@@ -47,15 +47,13 @@ img{
 .text{
   background-color:#2192905b;
   padding: auto;
-  padding-bottom: 7rem;
-  
+  padding-bottom: 5rem;
   
   
   
 }
 
 p{
-
   font-family: 'Montserrat';
   line-height: 1.6; 
   width: auto;
@@ -76,9 +74,7 @@ p{
   height: 5rem;
   background-color:#21929061; 
   padding: auto;
-  padding-bottom: 2rem;
-  padding-top: 0rem;
-  margin-top: 0rem;
+  
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   
 }
@@ -95,7 +91,7 @@ p{
   transition: background-color 0.3s ease;
 }
 a{
-  color: #0d0d17;
+  color: #23198e;
 }
 .xdd:hover {
   background-color: #627d9a; /* A darker blue */
@@ -109,12 +105,12 @@ a{
       <img src="{image6}" alt="">
   </div>
   <div class ="text">
-      <p>Komt uw elektricien niet langs voor kleine werkjes? Neem gerust <u><a href="tel:+0477291260">contact</a></u> op met mij om een stopcontact of luchter te laten plaatsen, uw nieuwe poolhouse van elektriciteit te laten voorzien, ... en ondertussen hang ik snel uw nieuw kadertje op. </p>
+      <p>Komt uw elektricien niet langs voor kleine werkjes? Neem gerust <u><a href="https://www.w3schools.com">contact</a></u> op met mij om een stopcontact of luchter te laten plaatsen, uw nieuwe poolhouse van elektriciteit te laten voorzien, ... en ondertussen hang ik snel uw nieuw kadertje op. </p>
       
     </div>
     
     <div class='xd'>
-      <button class='xdd'><a href="tel:+0477291260">Nu bellen</a></button>
+      <button class='xdd'>Nu bellen</button>
     </div>
 
   
