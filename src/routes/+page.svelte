@@ -4,7 +4,7 @@
     import DisplayLower from "$lib/Components/UI/displayLower.svelte"
     import AboutCard from '$lib/Components/UI/AboutCard.svelte';
     import NuBellen from '$lib/Components/UI/NuBellen.svelte';
-    import Choose from '$lib/Components/UI/Choose.svelte';
+    import Choose from '$lib/Components/UI/ChooseGrid.svelte';
     
 
 
