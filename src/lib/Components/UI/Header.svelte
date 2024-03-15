@@ -2,9 +2,16 @@
     import Contact from './Contact.svelte';
     import CallNow from './CallNow.svelte';
     import { fade } from 'svelte/transition';
+    import {createEventDispatcher} from 'svelte'
+    const dispatch = createEventDispatcher()
     $: innerWidth = 0
     
+    let site;
 
+    function handeleSiteChange(event) {
+      
+        site = event.detail
+    }
 </script>
 
 <svelte:window bind:innerWidth  />
@@ -74,7 +81,7 @@
     <div class="title-container"><h1>Kleine Elektriciteitswerken Serge</h1></div>
     {#if innerWidth >= 1100}
       <div class = "right-section">
-        <Contact/>
+        <Contact on:changeSite={() => {dispatch('changeSite' , 'home')}}/>
         <CallNow/>
     
       </div>

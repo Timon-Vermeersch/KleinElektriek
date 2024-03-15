@@ -25,8 +25,10 @@ const colorPalette = {
   lightestTeal: '#54d8d8',
   brightestTeal: '#88efef'
 };
-
-
+ let site;
+function handeleSiteChange(event) {
+        site = event.detail
+    }
 
 $: headerStyle = `background-image: url(${headerPicture}); 
                 height: 30rem;
@@ -128,7 +130,7 @@ h1{
 
 
 {#if (scrolledY < innerHeight * 0.1)}
-<Header/>
+<Header on:changeSite={() => {dispatch('changeSite' , 'home')}}/>
 {/if}
 
 
