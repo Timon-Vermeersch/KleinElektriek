@@ -1,15 +1,18 @@
 
 <script>
+    import {createEventDispatcher} from 'svelte'
     import image11 from "$lib/assets/11.jpg"
     import image2 from "$lib/assets/2.jpg"
-	  // import ChooseItem from "$lib/Components/UI/deejay/ChooseItem.svelte";
+    export let site;
 
-    // let cards = [
 
-    //     {id:'1', img:image11 , intro: 'This card will guide you to Deejay Serge'},
-    //     {id:'2' ,img:image2, intro: 'This card will guide you to Kleine elektriciteitswerkenSerge'}
+  const dispatch = createEventDispatcher()
 
-    // ]
+    function updateSite(newSite){
+      site = newSite;
+      dispatch('siteChange' , site);
+    }
+
 
 
 
@@ -28,7 +31,7 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden;
+      
     }
     
     :global(body) {
@@ -47,13 +50,22 @@
     }
     article{
       display: flex;
+      justify-content: center;
+      font-size: clamp(1rem, 1vw, 2rem); 
+      display: flex;
       flex-direction: column;
       margin: 2rem;
+      padding: 1rem;
       max-width: 60vw;
       max-height: 70vh;
-      height: 50rem;
+      height: 70vh;
       width: 50rem;
       border: solid 1px black;
+      cursor: pointer;
+      
+      
+      
+      
       
 
             /* From https://css.glass */
@@ -69,18 +81,20 @@
     .title{
       display: flex;
       justify-content: center;
-      margin: 0.5rem;
-      padding: 0.5rem;
+      margin: 0.2rem;
+      padding: 0.2rem;
+      
     }
     .card-img{
+      padding: 0.5rem;
       margin: 0.5rem;
       display: flex;
       justify-content: center;
-      max-height: 100%;
       max-width: 100%;
       overflow: hidden;
       display: block;
-      border-radius: 30px;
+      
+      
       /* object-fit: |tried| fill, contain, scale-down */
       
       
@@ -89,13 +103,16 @@
       object-fit: cover; 
       width: 100%;
       height: 100%;
+      border-radius: 30px;
       
     }
     .footer{
-      margin: 0.5rem;
-      padding: 0.5rem;
+      margin: 0.4rem;
+      padding: 0.1rem;
       display: flex;
       justify-content: center;
+      text-shadow: 1px 2px 20px #000000;
+      font-weight: 900;
 
     }
     .page-title {
@@ -107,34 +124,42 @@
     .cards-container{
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      
     }
 
   </style>
 
-<div class = 'full-page-container'>
-      <header>
-        <h1 class="page-title">Welkom! Selecteer uw dienst.</h1>
-      </header>
- 
+
+
+
+  <div class = 'full-page-container'>
+    <header>
+      <h1 class="page-title">Welkom! Selecteer uw dienst.</h1>
+    </header>
       <div class='cards-container'>
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+          <article on:click={() => {dispatch('changeSite' , 'deejay')}}>
+            <div class='title'> <h1>Deejay Serge</h1></div>
+            <div class='card-img'><img src="{image11}" alt="DeejaySerge"></div>
+            <div class='footer'>Boek nu!</div>
+          </article>  
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
+          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
+          <article on:click={() => {dispatch('changeSite' , 'elek')}}>  
+            
+            <div class='title'><h1>Kleine Elektriciteitswerken Serge</h1></div>
+            <div class='card-img'><img src="{image2}" alt="DeejaySerge"></div>
+            <div class='footer'>Schakel in!</div>
 
-
-        <article>
-          <div class='title'> <h1>Deejay Serge</h1></div>
-          <div class='card-img'><img src="{image11}" alt="DeejaySerge"></div>
-          <!-- <div class='footer'>footer</div> -->
-        </article>  
-        
-        <article>  
-          
-          <div class='title'><h1>Kleine Elektriciteitswerken Serge</h1></div>
-          <div class='card-img'><img src="{image2}" alt="DeejaySerge"></div>
-          <!-- <div class='footer'>This card will guide you to Kleine elektriciteitswerkenSerge</div> -->
-
-        </article>
-
+          </article>
       </div>
+  </div>
 
 
- </div>
-  
+
+
+

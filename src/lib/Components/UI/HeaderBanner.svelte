@@ -7,6 +7,7 @@ import Button from '$lib/Components/UI/Button.svelte';
 import MapsCard from './MapsCard.svelte';
 import NuBellen from './NuBellen.svelte';
 import AboutCard from './AboutCard.svelte';
+import {createEventDispatcher} from 'svelte'
 let mobile = ''
 let state = 'about'
 let scroll = ''
@@ -16,6 +17,7 @@ $: innerHeight = 0;
 $: mobile = innerWidth < 1100 ? '' : '';
 $: scroll = innerWidth < 1100 ? 'scroll': 'none'
 
+const dispatch = createEventDispatcher()
 const colorPalette = {
   darkestTeal: '#006d6d',
   mediumTeal: '#1d9a9a',
@@ -138,7 +140,7 @@ h1{
               <Button on:click = {setBellen}>Info</Button>   
               <Button on:click = {setRoute}>Route</Button>
               <Button on:click = {scrollToBottom}>Gallerij</Button>
-              <Button>Deejay Serge</Button>  
+              <Button on:click = {() => {dispatch('changeSite' , 'deejay')}}>Deejay Serge</Button>  
                  
                      
               </div>
