@@ -6,7 +6,11 @@
     import NuBellen from '$lib/Components/UI/NuBellen.svelte';
     import Choose from '$lib/Components/UI/ChooseGrid.svelte';
     
+    let site = 'home'
 
+    function handeleSiteChange(event) {
+        site = event.detail
+    }
 
 </script>
 
@@ -28,12 +32,17 @@
 
 
 
-<!-- 
-
-<HeaderBanner/>
 
 
-<DisplayLower/>
- -->
 
-<Choose/>
+
+{#if site === 'home'}
+    <Choose on:changeSite={handeleSiteChange}/>
+{:else if site === 'elek'}
+    <HeaderBanner on:changeSite={handeleSiteChange}/>
+    <DisplayLower/>
+{:else if site === 'deejay'}
+    <h1>deejaySite</h1>
+{/if}
+
+
