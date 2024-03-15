@@ -56,12 +56,13 @@
       flex-direction: column;
       margin: 2rem;
       padding: 1rem;
-      max-width: 60vw;
-      max-height: 70vh;
-      height: 70vh;
+      max-width: 40vw;
+      max-height: 75vh;
+      height: 75vh;
       width: 50rem;
       border: solid 1px black;
       cursor: pointer;
+      
       
       
       
@@ -81,8 +82,12 @@
     .title{
       display: flex;
       justify-content: center;
+      align-items: center;
       margin: 0.2rem;
       padding: 0.2rem;
+      
+     
+      
       
     }
     .card-img{
@@ -90,6 +95,7 @@
       margin: 0.5rem;
       display: flex;
       justify-content: center;
+      max-height: 70%;
       max-width: 100%;
       overflow: hidden;
       display: block;
@@ -104,6 +110,8 @@
       width: 100%;
       height: 100%;
       border-radius: 30px;
+      
+      
       
     }
     .footer{
@@ -129,6 +137,12 @@
       
       
     }
+    .first-article .card-img img{
+      object-position: top center;
+    }
+    .second-article .card-img img {
+      
+    }
 
   </style>
 
@@ -142,14 +156,14 @@
       <div class='cards-container'>
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-          <article on:click={() => {dispatch('changeSite' , 'deejay')}}>
+          <article class='first-article' on:click={() => {dispatch('changeSite' , 'deejay')}}>
             <div class='title'> <h1>Deejay Serge</h1></div>
             <div class='card-img'><img src="{image11}" alt="DeejaySerge"></div>
             <div class='footer'>Boek nu!</div>
           </article>  
           <!-- svelte-ignore a11y-click-events-have-key-events -->
           <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-          <article on:click={() => {dispatch('changeSite' , 'elek')}}>  
+          <article  class='second-article'on:click={() => {dispatch('changeSite' , 'elek')}}>  
             
             <div class='title'><h1>Kleine Elektriciteitswerken Serge</h1></div>
             <div class='card-img'><img src="{image2}" alt="DeejaySerge"></div>
