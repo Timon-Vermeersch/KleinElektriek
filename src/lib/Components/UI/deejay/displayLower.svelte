@@ -8,7 +8,15 @@ import image3 from "$lib/assets/1-3.jpg"
 import image4 from "$lib/assets/1-4.jpg"
 import image5 from "$lib/assets/1-5.jpg"
 import image6 from "$lib/assets/1-6.jpg"
-import image7 from "$lib/assets/1-8.jpg"
+import image7 from "$lib/assets/1-19.jfif"
+import image8 from "$lib/assets/1-12.jfif"
+import image9 from "$lib/assets/1-13.jfif"
+import image10 from "$lib/assets/1-14.jfif"
+import image11 from "$lib/assets/1-15.jfif"
+import image12 from "$lib/assets/1-16.jfif"
+import image13 from "$lib/assets/1-17.jfif"
+import image14 from "$lib/assets/1-18.jfif"
+
 const colorPalette = {
   darkestTeal: '#006d6d',
   mediumTeal: '#1d9a9a',
@@ -72,13 +80,14 @@ p{
 <div id='mainContainer' >
     
 <!-- foto1 -->
-    <div class='foto'>
-         <!-- <p class='thick'>TEXT</p>
-         <p>subtext</p> -->
-        <article><img src={image1} alt=""></article>
+    <div>
+                
+        <article><img src={image7} alt=""></article>
+        
     </div>
 
 <!-- foto2 -->
+
         <div>
             <article><img src={image2} alt=""></article>
             
@@ -91,6 +100,47 @@ p{
    </div>
 
 <!-- foto4 -->
+        <div class='foto'>
+            
+            <article><img src={image9} alt=""></article>
+            
+        </div>
+        <div class='foto'>
+            
+            <article><img src={image8} alt=""></article>
+            
+        </div>
+        <div class='foto'>
+            
+            <article><img src={image10} alt=""></article>
+            
+        </div>
+        <div class='foto'>
+            
+            <article><img src={image11} alt=""></article>
+            
+        </div>
+
+        <div class='foto'>
+            
+            <article><img src={image13} alt=""></article>
+            
+        </div>
+        <div class='foto'>
+            
+            <article><img src={image14} alt=""></article>
+            
+        </div>
+        <div class='foto'>
+                
+            <article><img src={image12} alt=""></article>
+            
+        </div>
+        <div class='foto'>
+            <!-- <p class='thick'>TEXT</p>
+            <p>subtext</p> -->
+           <article><img src={image1} alt=""></article>
+       </div>
         <div class='foto'>
             
             <article><img src={image4} alt=""></article>
@@ -109,16 +159,8 @@ p{
             <article><img src={image5} alt=""></article>
             
         </div>
-        <div>
-            
-            <article><img src={image4} alt=""></article>
-            
-        </div>
-        <div>
-            
-            <article><img src={image7} alt=""></article>
-            
-        </div>
+
+
 
 
 

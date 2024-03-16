@@ -145,7 +145,7 @@
     .first-article .card-img img{
       object-position: top center;
     }
-    .second-article .card-img img {
+    .second-article  {
       
     }
 
