@@ -75,7 +75,7 @@ p{
   height: auto;
   background-color:#fca53a00; 
   padding: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   padding-top: 0rem;
   margin-top: 0rem;
   
