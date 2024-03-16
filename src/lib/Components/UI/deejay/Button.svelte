@@ -19,8 +19,8 @@
   button,
   a {
     font: inherit;
-    border: 1px solid #88efef;
-    background: rgba(7, 149, 149, 0.799);
+    border: 1px solid #fbfbfb;
+    background: #E1771E;
     padding: 0.5rem 1rem;
     color: white;
     border-radius: 5px;
@@ -38,8 +38,8 @@
   button:active,
   a:hover,
   a:active {
-    background:#3ac1c1ef;
-    border-color: #3ac1c1e4;
+    background:#E1771E;
+    border-color: #E1771E;
     box-shadow: 1px 1px 8px rgba(77, 51, 51, 0.26);
     
   }
@@ -67,7 +67,7 @@
 
   .outline {
     background: transparent;
-    color: #3ac1c1;
+    color: #E1771E;
     box-shadow: none;
   }
 

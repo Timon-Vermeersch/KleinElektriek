@@ -2,12 +2,13 @@
 <script>
 
 import { onMount } from "svelte";
-import image1 from "$lib/assets/1.jpg"
-import image2 from "$lib/assets/2.jpg"
-import image3 from "$lib/assets/3.jpg"
-import image4 from "$lib/assets/4.jpg"
-import image5 from "$lib/assets/5.jpg"
-import image6 from "$lib/assets/6.jpg"
+import image1 from "$lib/assets/1-7.jpg"
+import image2 from "$lib/assets/1-2.jpg"
+import image3 from "$lib/assets/1-3.jpg"
+import image4 from "$lib/assets/1-4.jpg"
+import image5 from "$lib/assets/1-5.jpg"
+import image6 from "$lib/assets/1-6.jpg"
+import image7 from "$lib/assets/1-8.jpg"
 const colorPalette = {
   darkestTeal: '#006d6d',
   mediumTeal: '#1d9a9a',
@@ -34,7 +35,7 @@ const colorPalette = {
 
 <style>
     #mainContainer{
-        background-color: #205357;
+        background-color: #E1771E;
         height: auto;
         position: relative;
         display: flex;
@@ -51,7 +52,7 @@ const colorPalette = {
     }
     div{
         /* padding: 1rem; */
-        background-color: #205357;
+        background-color: #E1771E;
         justify-content: space-between;
         padding: 0.2rem;
     }
@@ -115,7 +116,7 @@ p{
         </div>
         <div>
             
-            <article><img src={image6} alt=""></article>
+            <article><img src={image7} alt=""></article>
             
         </div>
 

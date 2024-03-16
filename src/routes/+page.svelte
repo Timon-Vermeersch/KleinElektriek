@@ -5,7 +5,9 @@
     import AboutCard from '$lib/Components/UI/AboutCard.svelte';
     import NuBellen from '$lib/Components/UI/NuBellen.svelte';
     import Choose from '$lib/Components/UI/ChooseGrid.svelte';
-    
+
+    import DeejayHeaderbanner from '$lib/Components/UI/deejay/HeaderBanner.svelte';
+    import DeejayDisplayLower from '$lib/Components/UI/deejay/DisplayLower.svelte';
     let site = 'home'
 
     function handeleSiteChange(event) {
@@ -42,7 +44,8 @@
     <HeaderBanner on:changeSite={handeleSiteChange}/>
     <DisplayLower/>
 {:else if site === 'deejay'}
-    <h1>deejaySite</h1>
+    <DeejayHeaderbanner on:changeSite={handeleSiteChange}/>
+    <DeejayDisplayLower/>
 {/if}
 
 

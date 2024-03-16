@@ -2,9 +2,16 @@
     import Contact from './Contact.svelte';
     import CallNow from './CallNow.svelte';
     import { fade } from 'svelte/transition';
+    import {createEventDispatcher} from 'svelte'
+    const dispatch = createEventDispatcher()
     $: innerWidth = 0
     
+    let site;
 
+    function handeleSiteChange(event) {
+      
+        site = event.detail
+    }
 </script>
 
 <svelte:window bind:innerWidth  />
@@ -17,7 +24,7 @@
     top: 0;
     left: 0;
     height: 3.5rem;
-    background-color: #006d6d23;
+    background-color:#e1761e31;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,12 +76,12 @@
 
 <div transition:fade={{ delay: 0, duration: 50 }}>
   
-  <img src="/outlet-svgrepo-com.svg" alt="Outlet Icon" class="header-icon" >
+  <img src="/SystemUiconsHome.svg" alt="Outlet Icon" class="header-icon" >
     
-    <div class="title-container"><h1>Kleine Elektriciteitswerken Serge</h1></div>
+    <div class="title-container"><h1>Deejay Serge</h1></div>
     {#if innerWidth >= 1100}
       <div class = "right-section">
-        <Contact/>
+        <Contact on:changeSite={() => {dispatch('changeSite' , 'home')}}/>
         <CallNow/>
     
       </div>
