@@ -49,16 +49,17 @@
       flex-wrap: wrap;
     }
     article{
+      
       display: flex;
       justify-content: center;
       font-size: clamp(1rem, 1vw, 2rem); 
       display: flex;
       flex-direction: column;
-      margin: 2rem;
+      margin: 1.5rem;
       padding: 1rem;
       max-width: 40vw;
       max-height: 75vh;
-      height: 75vh;
+      height: auto;
       width: 50rem;
       border: solid 1px black;
       cursor: pointer;
@@ -85,16 +86,17 @@
       align-items: center;
       margin: 0.2rem;
       padding: 0.2rem;
-      
-     
-      
-      
+      flex-wrap: wrap;  
+    }
+    .title h1{
+      font-size: clamp(1rem, 2.5vw, 2rem); 
     }
     .card-img{
       padding: 0.5rem;
       margin: 0.5rem;
       display: flex;
       justify-content: center;
+      height: 70%;
       max-height: 70%;
       max-width: 100%;
       overflow: hidden;
@@ -123,13 +125,16 @@
       font-weight: 900;
 
     }
+    
     .page-title {
     text-align: center;
     font-size: 2.5rem; 
-    margin-bottom: 2rem; 
+    padding: 1rem;
+    margin-bottom: 0.5rem; 
     color: #fff;
     }
     .cards-container{
+      
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
