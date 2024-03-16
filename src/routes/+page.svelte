@@ -7,7 +7,7 @@
     import Choose from '$lib/Components/UI/ChooseGrid.svelte';
 
     import DeejayHeaderbanner from '$lib/Components/UI/deejay/HeaderBanner.svelte';
-    import DeejayDisplayLower from '$lib/Components/UI/deejay/DisplayLower.svelte';
+    import DeejayDisplayLower from '$lib/Components/UI/deejay/displayLower.svelte';
     let site = 'home'
 
     function handeleSiteChange(event) {
