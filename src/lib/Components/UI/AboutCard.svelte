@@ -17,7 +17,7 @@
     /* From https://css.glass */
 
     
-    width:500px;
+    width:auto;
     height:auto;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@
   padding: 1rem;
   max-width: 95%;
   max-height: 95%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: auto;
   
   
@@ -39,20 +39,16 @@
 
 img{
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 40vh;
+  height: 25vh;
   overflow: hidden;
   border-radius: 12px;
 }
 .text{
-  background-color:#2192905b;
+  background-color:#e1761e00;
   padding: auto;
-  padding-bottom: 7rem;
-  
-  
-  
-  
-}
+  padding-bottom: 1rem;
+overflow-y: scroll;}
 
 p{
 
@@ -73,19 +69,19 @@ p{
   
 }
 .xd{
-  height: 5rem;
-  background-color:#21929061; 
+  height: auto;
+  background-color:#21929000; 
   padding: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   padding-top: 0rem;
   margin-top: 0rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
   
 }
 
 .xdd {
   
-  background-color:#fca43a; /* Bootstrap primary blue */
+  background-color:#FFA07A; /* Bootstrap primary blue */
   color: #0A0A0ADE;
   padding: 10px 20px;
   
@@ -98,7 +94,7 @@ a{
   color: #0d0d17;
 }
 .xdd:hover {
-  background-color: #627d9a; /* A darker blue */
+  background-color: #FFDAB9; /* A darker blue */
 }
 </style>
 

@@ -1,5 +1,5 @@
 <script>
-  import image6 from "$lib/assets/7.jpg"
+  import image6 from "$lib/assets/1-5.jpg"
   import Button from "./Button.svelte";
     
 
@@ -17,7 +17,7 @@
     /* From https://css.glass */
 
     
-    width:500px;
+    width:auto;
     height:auto;
     display: flex;
     justify-content: space-between;
@@ -31,29 +31,30 @@
   padding: 1rem;
   max-width: 95%;
   max-height: 95%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: auto;
+  
+  
   
   
 }
 
 img{
   object-fit: cover;
-  width: 100%;
-  height: 100%;
+  width: 40vh;
+  height: 25vh;
   overflow: hidden;
   border-radius: 12px;
 }
 .text{
-  background-color:#2192905b;
+  background-color:#e1761e00;
   padding: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
+overflow-y: scroll;}
   
-  
-  
-}
 
 p{
+
   font-family: 'Montserrat';
   line-height: 1.6; 
   width: auto;
@@ -71,17 +72,19 @@ p{
   
 }
 .xd{
-  height: 5rem;
-  background-color:#21929061; 
+  height: auto;
+  background-color:#fca53a00; 
   padding: auto;
+  padding-bottom: 2rem;
+  padding-top: 0rem;
+  margin-top: 0rem;
   
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   
 }
 
 .xdd {
   
-  background-color:#fca43a; /* Bootstrap primary blue */
+  background-color:#ECC94B; /* Bootstrap primary blue */
   color: #0A0A0ADE;
   padding: 10px 20px;
   
@@ -91,27 +94,31 @@ p{
   transition: background-color 0.3s ease;
 }
 a{
-  color: #23198e;
+  color: #0d0d17;
 }
 .xdd:hover {
-  background-color: #627d9a; /* A darker blue */
+  background-color: #F6E05E; /* A darker blue */
+}
+
+.fullcard{
+  overflow-y: auto;
 }
 </style>
 
 
-<div>
+<div class='fullcard'>
 
   <div class="card">
       <img src="{image6}" alt="">
   </div>
   <div class ="text">
-      <p>Komt uw elektricien niet langs voor kleine werkjes? Neem gerust <u><a href="https://www.w3schools.com">contact</a></u> op met mij om een stopcontact of luchter te laten plaatsen, uw nieuwe poolhouse van elektriciteit te laten voorzien, ... en ondertussen hang ik snel uw nieuw kadertje op. </p>
+      <p>Op zoek naar dé all-round DJ? Contacteer Deejay Serge voor een unieke mix van muziekgenres die elk evenement, groot of klein, onvergetelijk maakt. Beleef een avond vol dans en plezier! <u><a href="tel:+0477291260"></a></u></p>
       
     </div>
     
     <div class='xd'>
-      <button class='xdd'>Nu bellen</button>
-    </div>
+      <button class='xdd'><a href="tel:+0477291260">Nu bellen</a></button>
+</div>
 
   
 

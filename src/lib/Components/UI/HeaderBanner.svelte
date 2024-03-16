@@ -1,6 +1,6 @@
 
 <script>
-
+import Youtube from './deejay/youtube.svelte';
 import headerPicture from '$lib/assets/foto222.png';
 import Header from './Header.svelte';
 import Button from '$lib/Components/UI/Button.svelte';
@@ -58,6 +58,7 @@ function setRoute (){
 function setBellen (){
        state = 'bellen'
 }
+
 function scrollToBottom() {
     const maxHeight = document.body.scrollHeight;
     window.scrollTo({top: maxHeight, behavior: 'smooth'});
@@ -142,7 +143,8 @@ h1{
               <Button on:click = {setBellen}>Info</Button>   
               <Button on:click = {setRoute}>Route</Button>
               <Button on:click = {scrollToBottom}>Gallerij</Button>
-              <Button on:click = {() => {dispatch('changeSite' , 'deejay')}}>Deejay Serge</Button>  
+              <Button on:click = {() => {dispatch('changeSite' , 'deejay')}}>Deejay Serge</Button>
+              
                  
                      
               </div>

@@ -45,7 +45,7 @@
     border-radius: 12px;
   }
   .text{
-    background-color:#2192905b;
+    background-color:#21929000;
     padding: auto;
     padding-bottom: 5rem;
     max-height: 4.5rem;
@@ -73,7 +73,7 @@
   }
   .xd{
     height: 5rem;
-    background-color:#21929061; 
+    background-color:#21929000; 
     padding: auto;
     
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -82,7 +82,7 @@
   
   .xdd {
     
-    background-color:#fca43a; /* Bootstrap primary blue */
+    background-color: #FFA07A; /* Bootstrap primary blue */
     color: #0A0A0ADE;
     padding: 10px 20px;
     
@@ -95,7 +95,7 @@
     color: #f3f0f0;
   }
   .xdd:hover {
-    background-color: #627d9a; /* A darker blue */
+    background-color: #FFDAB9; /* A darker blue */
   }
   #uniqueID a{
     color: black;
