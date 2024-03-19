@@ -1,6 +1,6 @@
 <script>
     import Icon from "$lib/assets/SimpleLineIconsEnvelope.svg"
-
+  import Fb from "../fb.svelte";
     import {createEventDispatcher} from 'svelte'
     const dispatch = createEventDispatcher()
 </script>
@@ -23,6 +23,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-missing-attribute -->
+
 <a on:click = {() => {dispatch('changeSite' , 'home')}}>
          Home
 </a>

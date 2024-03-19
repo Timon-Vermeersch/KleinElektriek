@@ -27,6 +27,7 @@
         background-size: cover;
         overflow-y: none;
         max-width: 100%;
+        font-weight: 900;
   }
 
 </style>

@@ -31,17 +31,16 @@ function handeleSiteChange(event) {
     }
 
 $: headerStyle = `background-image: url(${headerPicture}); 
-                height: 30rem;
+                
                 background-size: cover;
                 padding-top: 2px;
-                height: 100vh;
-                width: 100vw;
+                min-height: 100svh;
                 flex-direction: ${mobile};
-                overflow-y: scroll;
                 display:flex;
                 justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
+                
                 
                 
                 

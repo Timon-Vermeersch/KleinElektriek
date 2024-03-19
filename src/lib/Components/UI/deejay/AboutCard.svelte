@@ -61,7 +61,7 @@ p{
   height: auto;
   padding: auto;
   font-size: large;
-  font-weight:bolder;
+  
   margin: 1rem;
   color: #ffffff;
   text-shadow: 1px 2px 5px #000000;
@@ -112,7 +112,7 @@ a{
       <img src="{image6}" alt="">
   </div>
   <div class ="text">
-      <p>Op zoek naar dé all-round DJ? Contacteer Deejay Serge voor een unieke mix van muziekgenres die elk evenement, groot of klein, onvergetelijk maakt. Beleef een avond vol dans en plezier! <u><a href="tel:+0477291260"></a></u></p>
+      <p>Op zoek naar the most Complete All Round Dj? Contacteer Deejay Serge voor een unieke mix van muziekgenres die elk evenement, groot of klein, onvergetelijk maakt. Beleef een avond vol dans en plezier! <u><a href="tel:+0477291260"></a></u></p>
       
     </div>
     
