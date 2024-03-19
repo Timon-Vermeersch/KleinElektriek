@@ -31,13 +31,13 @@ function handeleSiteChange(event) {
     }
 
 $: headerStyle = `background-image: url(${headerPicture}); 
-                height: 30rem;
+                
                 background-size: cover;
                 padding-top: 2px;
-                height: 100vh;
+                min-height: 100svh;
                 width: 100vw;
                 flex-direction: ${mobile};
-                overflow-y: scroll;
+                
                 display:flex;
                 justify-content: center;
                 align-items: center;
@@ -76,8 +76,6 @@ function scrollToBottom() {
        padding: 1rem;
        opacity: 100%;
        background-color: rgba(255, 255, 255, 0);
-       
-       
        display: flex;
        height: 12px;
        width: 10rem;
@@ -101,7 +99,7 @@ function scrollToBottom() {
               background: rgba(84, 216, 216, 0.24);
               border-radius: 16px;
               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-              backdrop-filter: blur(4.8px);
+              backdrop-filter: blur(7px);
               -webkit-backdrop-filter: blur(4.9px);
               border: 1px solid rgba(84, 216, 216, 0.9);
        

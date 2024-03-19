@@ -93,6 +93,11 @@ p{
 a{
   color: #0d0d17;
 }
+
+#contact {
+  color:#FFA07A
+}
+
 .xdd:hover {
   background-color: #FFDAB9; /* A darker blue */
 }
@@ -105,7 +110,7 @@ a{
       <img src="{image6}" alt="">
   </div>
   <div class ="text">
-      <p>Komt uw elektricien niet langs voor kleine werkjes? Neem gerust <u><a href="tel:+0477291260">contact</a></u> op met mij om een stopcontact of luchter te laten plaatsen, uw nieuwe poolhouse van elektriciteit te laten voorzien, ... en ondertussen hang ik snel uw nieuw kadertje op. </p>
+      <p>Komt uw elektricien niet langs voor kleine werkjes? Neem gerust <u><a id='contact' class='contact'href="tel:+0477291260">contact</a></u> op met mij om een stopcontact of luchter te laten plaatsen, uw nieuwe poolhouse van elektriciteit te laten voorzien, ... en ondertussen hang ik snel uw nieuw kadertje op. </p>
       
     </div>
     
