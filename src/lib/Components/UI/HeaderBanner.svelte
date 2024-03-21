@@ -35,7 +35,7 @@ $: headerStyle = `background-image: url(${headerPicture});
                 background-size: cover;
                 padding-top: 2px;
                 min-height: 100svh;
-                width: 100vw;
+                max-width: 100svw;
                 flex-direction: ${mobile};
                 
                 display:flex;
@@ -140,7 +140,7 @@ h1{
               <Button on:click = {setAbout}>Welkom</Button>
               <Button on:click = {setBellen}>Info</Button>   
               <Button on:click = {setRoute}>Route</Button>
-              <Button on:click = {scrollToBottom}>Gallerij</Button>
+              <Button on:click = {scrollToBottom}>Galerij</Button>
               <Button on:click = {() => {dispatch('changeSite' , 'deejay')}}>Deejay Serge</Button>
               
                  

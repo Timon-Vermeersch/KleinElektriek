@@ -21,7 +21,8 @@
 
 <svelte:head>
 	<title>Kleine Elektriciteitswerken Serge </title>
-    <meta name="description" content="Elektrische Diensten van Serge - uw lokale expert voor kleine elektriciteitsklussen. Snelle installatie en reparatie van stopcontacten, lichtarmaturen en meer. Neem contact op voor elektriciteitsvoorziening in uw poolhouse of voor het ophangen van een nieuw kader. Snel en betrouwbaar in uw regio.">
+    <meta name="description" content="Website van Serge Vermeersch, bekend als Deejay Serge - The most complete all-round DJ voor elk evenement. Daarnaast biedt Serge als uw lokale elektricien in Kluisbergen snelle en betrouwbare elektrische diensten. Contact: +32 477 29 12 60 voor het repareren en installeren van stopcontacten en lichtarmaturen tot het creëren van de perfecte sfeer met muziek voor uw feesten en evenementen.">
+    <meta name="keywords" content="Elektrieker Kluisbergen,Elektricien Kluisbergen,DJ Serge,Serge Vermeersch,Elektrische Diensten,DJ voor feesten">
 </svelte:head>
 
 
@@ -146,6 +147,16 @@
       object-position: top center;
     }
     .second-article  {
+      
+    }
+
+    article {
+      transition: transform 0.3s ease;
+      
+    }
+
+    article:hover {
+      transform: translateY(-10px);
       
     }
 

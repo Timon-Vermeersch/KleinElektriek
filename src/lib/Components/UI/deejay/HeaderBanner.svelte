@@ -143,7 +143,7 @@ h1{
               <Button on:click = {setAbout}>Welkom</Button>
               <Button on:click = {setBellen}>Info</Button>   
               <Button on:click = {setRoute}>Route</Button>
-              <Button on:click = {scrollToBottom}>Gallerij</Button>
+              <Button on:click = {scrollToBottom}>Galerij</Button>
               <Button on:click = {setVideo}>YouTube</Button>
               <Button on:click = {() => {dispatch('changeSite' , 'elek')}}>Serge's elektriciteit</Button>  
                  

@@ -10,11 +10,16 @@ import Fb from "../fb.svelte";
     padding-right: 2rem;
     font-size: 16px; /* Example text size */
     text-shadow: 2px 0px 4px #000000;
+    text-decoration: none;
     }
 
     .smallIcon{
       transform: translate(25%,25%);
     }
+    a:hover{
+   text-decoration: underline;
+   
+ }
 </style>
 
 <a href="tel:+0477291260">Bellen</a>
