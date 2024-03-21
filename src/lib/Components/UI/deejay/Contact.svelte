@@ -11,10 +11,11 @@
     padding: 10px 20px; 
     font-size: 16px;
     text-shadow: 2px 0px 4px #000000;
-    text-decoration: underline;
     cursor: pointer;
-    
-  
+ }
+
+ a:hover{
+  text-decoration: underline;
  }
 
 

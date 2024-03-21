@@ -1,7 +1,7 @@
 
 <script>
 
-import { onMount } from "svelte";
+import { onMount, onDestroy } from "svelte";
 import image1 from "$lib/assets/1-7.jpg"
 import image2 from "$lib/assets/1-2.jpg"
 import image3 from "$lib/assets/1-3.jpg"
@@ -17,31 +17,48 @@ import image12 from "$lib/assets/1-16.jfif"
 import image13 from "$lib/assets/1-17.jfif"
 import image14 from "$lib/assets/1-18.jfif"
 
-const colorPalette = {
-  darkestTeal: '#006d6d',
-  mediumTeal: '#1d9a9a',
-  lightTeal: '#3ac1c1',
-  lightestTeal: '#54d8d8',
-  brightestTeal: '#88efef'
-};
-// https://svelte.dev/repl/97366319dc7c477989fe744d01d81391?version=3.39.0
+let mainContainer;
+    
+    function scrollLeft() {
+        if (mainContainer) {
+          mainContainer.scrollBy({ left: -310, behavior: 'smooth' });
+        }
+    }
+    function scrollRight() {
+        if (mainContainer) {
+          mainContainer.scrollBy({ left: 310, behavior: 'smooth' });
+        }
+    }
 
+    function handleKeydown(event) {
+        switch (event.key) {
+            case 'ArrowLeft':
+                scrollLeft();
+                break;
+            case 'ArrowRight':
+                scrollRight();
+                break;
+        }
+    }
 
-// $: mainContainer;
-// $:  yScroll = 0;
+    onMount(() => {
+        window.addEventListener('keydown', handleKeydown);
+    });
 
-
-// function parseScroll() {
-//     yScroll = mainContainer.scrollTop;
-// }
-
-// onMount(() => {
-//     mainContainer.addEventListener('scroll', parseScroll);
-// });
+    onDestroy(() => {
+        window.removeEventListener('keydown', handleKeydown);
+    });
+    
+    
 
 </script>
 
 <style>
+    #galleryContainer {
+         position: relative; 
+         overflow: hidden;
+         max-width: 100svw;
+    }
     #mainContainer{
         background-color: #E1771E;
         height: auto;
@@ -59,7 +76,7 @@ const colorPalette = {
 
     }
     div{
-        /* padding: 1rem; */
+        
         background-color: #E1771E;
         justify-content: space-between;
         padding: 0.2rem;
@@ -72,12 +89,32 @@ const colorPalette = {
 p{
     margin: 0;
 }
+.arrow {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10; 
+      font-size: 36px;
+      background-color: #E1771E;
+      border-radius: 12px;
+      user-select: none;
+    }
+    
+    .arrow.left {
+      left: 0; 
+    }
+    
+    .arrow.right {
+      right: 0; 
+    }
 
   
 </style>
 <!-- <div style="color:white;">{yScroll}</div> -->
 <!-- bind:this={mainContainer} on:scroll={parseScroll} -->
-<div id='mainContainer' >
+<div id='galleryContainer'>
+    <div id='mainContainer' bind:this={mainContainer} >
     
 <!-- foto1 -->
     <div>
@@ -160,9 +197,13 @@ p{
             
         </div>
 
-
-
-
-
-
 </div>
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <span class="arrow left" on:click={scrollLeft}>&lt;</span>
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
+            <span class="arrow right" on:click={scrollRight}>&gt;</span>
+</div>
+
+

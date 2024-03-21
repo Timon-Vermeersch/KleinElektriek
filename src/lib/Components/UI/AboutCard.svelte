@@ -95,7 +95,10 @@ a{
 }
 
 #contact {
-  color:#FFA07A
+  color:#fefefe
+}
+#contact:hover{
+  color: #FFA07A;
 }
 
 .xdd:hover {
