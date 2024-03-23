@@ -8,27 +8,13 @@
     import { onMount } from 'svelte';
     import DeejayHeaderbanner from '$lib/Components/UI/deejay/HeaderBanner.svelte';
     import DeejayDisplayLower from '$lib/Components/UI/deejay/displayLower.svelte';
+    import Analytics from '$lib/Components/analytics.svelte'
     let site = 'home'
 
     function handeleSiteChange(event) {
         site = event.detail
     }
 
-    onMount(() => {
-    // Create a script element for Google Analytics
-    const script = document.createElement('script');
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-N3R3NZT5VK';
-    script.async = true;
-    document.head.appendChild(script);
-
-    // Initialize Google Analytics after the script is loaded
-    script.onload = () => {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'G-N3R3NZT5VK');
-    };
-  });
 
 </script>
 
@@ -54,7 +40,7 @@
 
 
 
-
+<Analytics/>
 {#if site === 'home'}
     <Choose on:changeSite={handeleSiteChange}/>
 {:else if site === 'elek'}
