@@ -72,12 +72,12 @@ function scrollToBottom() {
 #bannerInfo{
 
        
-       margin: 11rem 5rem 5rem 5rem; /* Top Right Bottom Left */
+       margin: 5rem 5rem 1rem 5rem; /* Top Right Bottom Left */
        padding: 1rem;
        opacity: 100%;
        background-color: rgba(255, 255, 255, 0);
        display: flex;
-       height: 12px;
+       
        width: 10rem;
        flex-direction: column;
        justify-content: space-evenly;
